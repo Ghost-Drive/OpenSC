@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/libs/UserTokenSlug.sol": {
+      "content": "// SPDX-License-Identifier: Unlicensed\n\npragma solidity 0.8.9;\n\nlibrary UserTokenSlug {\n\n    function toUserTokenSlug(address contractAddress) public pure returns(bytes32) {\n        return bytes32(bytes20(contractAddress));\n    }\n\n    function fromUserTokenSlug(bytes32 slug) public pure returns(address) {\n        require(\n            isValidSlug(slug),\n            \"Token slug doesn't look like user's token\"\n        );\n\n        return address(uint160(bytes20(slug)));\n    }\n\n    function isValidSlug(bytes32 slug) public pure returns (bool) {\n        return bytes12(uint96(uint256(slug))) == bytes12(0x0);\n    }\n\n}"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "storageLayout",
+          "devdoc",
+          "userdoc",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

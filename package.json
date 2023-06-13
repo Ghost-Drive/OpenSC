@@ -1,0 +1,39 @@
+{
+    "name": "tutorialtoken",
+    "version": "1.0.0",
+    "description": "",
+    "directories": {
+        "test": "test"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@nomiclabs/buidler": "^1.4.8",
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+        "@nomiclabs/hardhat-etherscan": "^3.0.4",
+        "@openzeppelin/hardhat-upgrades": "^1.21.0",
+        "chai": "^4.3.6",
+        "ethereum-waffle": "^3.4.4",
+        "ethers": "^5.6.9",
+        "hardhat": "^2.9.5",
+        "hardhat-deploy": "^0.11.10",
+        "hardhat-gas-reporter": "^1.0.8",
+        "lite-server": "^2.3.0",
+        "solidity-coverage": "^0.7.21",
+        "truffle-plugin-verify": "^0.5.19"
+    },
+    "dependencies": {
+        "@ghostdrive/signer": "github:Ghost-Drive/signer",
+        "@metamask/eth-sig-util": "^5.0.2",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+        "@opengsn/contracts": "^2.2.4",
+        "@openzeppelin/contracts": "^4.6.0",
+        "@openzeppelin/contracts-upgradeable": "^4.6.0",
+        "@truffle/hdwallet-provider": "^1.7.0",
+        "@uniswap/lib": "^4.0.1-alpha",
+        "dotenv": "^16.0.1",
+        "eth-sig-util": "^3.0.1",
+        "ethereum-waffle": "^3.4.4",
+        "signer": "github:Ghost-Drive/signer"
+    }
+}

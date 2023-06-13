@@ -1,0 +1,114 @@
+{
+  "address": "0x41BE5897aC03431Ee848be5D1bD5b300bd38bc0a",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "slug",
+          "type": "bytes32"
+        }
+      ],
+      "name": "fromUserTokenSlug",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "slug",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isValidSlug",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "contractAddress",
+          "type": "address"
+        }
+      ],
+      "name": "toUserTokenSlug",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x0011c37eb99f0bde8e59ab1ee76b9c3658d0b034fae4e498218dcf06c82e3f1d",
+  "receipt": {
+    "to": null,
+    "from": "0x6490C409b50B0dac59619E06B5a4bD14c3E968C3",
+    "contractAddress": "0x41BE5897aC03431Ee848be5D1bD5b300bd38bc0a",
+    "transactionIndex": 2,
+    "gasUsed": "156949",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000008000000000000000000000000000000000840000080000000000000100000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000080000000000000000000000000000000000000000004000000000000000100001000000000100000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000100000",
+    "blockHash": "0xb62c50a1a28673be619c9e2badd3f542cdca6584bd8da3b68d481c393b68a2df",
+    "transactionHash": "0x0011c37eb99f0bde8e59ab1ee76b9c3658d0b034fae4e498218dcf06c82e3f1d",
+    "logs": [
+      {
+        "transactionIndex": 2,
+        "blockNumber": 33341254,
+        "transactionHash": "0x0011c37eb99f0bde8e59ab1ee76b9c3658d0b034fae4e498218dcf06c82e3f1d",
+        "address": "0x0000000000000000000000000000000000001010",
+        "topics": [
+          "0x4dfe1bbbcf077ddc3e01291eea2d5c70c2b422b415d95645b9adcfd678cb1d63",
+          "0x0000000000000000000000000000000000000000000000000000000000001010",
+          "0x0000000000000000000000006490c409b50b0dac59619e06b5a4bd14c3e968c3",
+          "0x0000000000000000000000003a22c8bc68e98b0faf40f349dd2b2890fae01484"
+        ],
+        "data": "0x00000000000000000000000000000000000000000000000000023afa2569919b0000000000000000000000000000000000000000000000000291fca00a7f900000000000000000000000000000000000000000000000042e411417f13e3a6de1000000000000000000000000000000000000000000000000028fc1a5e515fe6500000000000000000000000000000000000000000000042e411652eb63a3ff7c",
+        "logIndex": 7,
+        "blockHash": "0xb62c50a1a28673be619c9e2badd3f542cdca6584bd8da3b68d481c393b68a2df"
+      }
+    ],
+    "blockNumber": 33341254,
+    "cumulativeGasUsed": "809294",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "61800de0b996e61c225c069bfe85132f",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"slug\",\"type\":\"bytes32\"}],\"name\":\"fromUserTokenSlug\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"slug\",\"type\":\"bytes32\"}],\"name\":\"isValidSlug\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"contractAddress\",\"type\":\"address\"}],\"name\":\"toUserTokenSlug\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/libs/UserTokenSlug.sol\":\"UserTokenSlug\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/libs/UserTokenSlug.sol\":{\"content\":\"// SPDX-License-Identifier: Unlicensed\\n\\npragma solidity 0.8.9;\\n\\nlibrary UserTokenSlug {\\n\\n    function toUserTokenSlug(address contractAddress) public pure returns(bytes32) {\\n        return bytes32(bytes20(contractAddress));\\n    }\\n\\n    function fromUserTokenSlug(bytes32 slug) public pure returns(address) {\\n        require(\\n            isValidSlug(slug),\\n            \\\"Token slug doesn't look like user's token\\\"\\n        );\\n\\n        return address(uint160(bytes20(slug)));\\n    }\\n\\n    function isValidSlug(bytes32 slug) public pure returns (bool) {\\n        return bytes12(uint96(uint256(slug))) == bytes12(0x0);\\n    }\\n\\n}\",\"keccak256\":\"0x2432468074cf51e21aefb87ac802985339c8c1ae8588b101811e0c68749e1179\",\"license\":\"Unlicensed\"}},\"version\":1}",
+  "bytecode": "0x6101df61003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361061004b5760003560e01c806339214ab114610050578063520b642e14610080578063fb0f713e146100b1575b600080fd5b61006361005e366004610160565b6100e0565b6040516001600160a01b0390911681526020015b60405180910390f35b6100a361008e366004610179565b60601b6bffffffffffffffffffffffff191690565b604051908152602001610077565b6100d06100bf366004610160565b60a01b6001600160a01b0319161590565b6040519015158152602001610077565b60006100f78260a01b6001600160a01b0319161590565b6101595760405162461bcd60e51b815260206004820152602960248201527f546f6b656e20736c756720646f65736e2774206c6f6f6b206c696b65207573656044820152683913b9903a37b5b2b760b91b606482015260840160405180910390fd5b5060601c90565b60006020828403121561017257600080fd5b5035919050565b60006020828403121561018b57600080fd5b81356001600160a01b03811681146101a257600080fd5b939250505056fea26469706673582212200515dd9a0268188d2e141adaf6166e871425b2174e597811e21245a846b7ec3e64736f6c63430008090033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361061004b5760003560e01c806339214ab114610050578063520b642e14610080578063fb0f713e146100b1575b600080fd5b61006361005e366004610160565b6100e0565b6040516001600160a01b0390911681526020015b60405180910390f35b6100a361008e366004610179565b60601b6bffffffffffffffffffffffff191690565b604051908152602001610077565b6100d06100bf366004610160565b60a01b6001600160a01b0319161590565b6040519015158152602001610077565b60006100f78260a01b6001600160a01b0319161590565b6101595760405162461bcd60e51b815260206004820152602960248201527f546f6b656e20736c756720646f65736e2774206c6f6f6b206c696b65207573656044820152683913b9903a37b5b2b760b91b606482015260840160405180910390fd5b5060601c90565b60006020828403121561017257600080fd5b5035919050565b60006020828403121561018b57600080fd5b81356001600160a01b03811681146101a257600080fd5b939250505056fea26469706673582212200515dd9a0268188d2e141adaf6166e871425b2174e597811e21245a846b7ec3e64736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
