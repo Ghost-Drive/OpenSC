@@ -11,7 +11,7 @@ Ghostdrive - Smart Contracts and Tokenization (FVM)
 **Individual or Entity Name:** `Ghostdrive Global`
 
 
-**Proposer:** `Ghost-Drive` :)
+**Proposer:** `Ghost-Drive` 
 
 
 **(Optional) Technical Sponsor:** `Paul Wagner`
