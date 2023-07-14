@@ -11,7 +11,7 @@ Ghostdrive - Smart Contracts and Tokenization (FVM)
 **Individual or Entity Name:** `Ghostdrive Global`
 
 
-**Proposer:** `Ghost-Drive` 
+**Proposer:** `Ghost-Drive` :)
 
 
 **(Optional) Technical Sponsor:** `Paul Wagner`
@@ -176,9 +176,8 @@ Andrii Murashkin: Our CTO, brings 15 years of software development and architect
 
 
 # Additional Information
-We learned about the Open Grants Program thanks to Paul Wagner.
-
-
+[current alpha version of the website and application
+](https://ghostdrive.com/)
 Please contact us using roman@ghostdrive.com
 
 
